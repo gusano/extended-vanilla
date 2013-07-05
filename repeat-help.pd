@@ -1,0 +1,31 @@
+#N canvas 505 98 608 432 10;
+#X obj 4 -57 cnv 15 600 66 empty empty repeat 18 30 0 48 -1 -260097
+0;
+#N canvas 483 222 450 300 LICENSE 0;
+#X text 18 8 This program is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version. This program
+is distributed in the hope that it will be useful \, but WITHOUT ANY
+WARRANTY \; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details. You should have received a copy of the GNU General
+Public License along with this program. If not \, see <http://www.gnu.org/licenses/>.
+;
+#X restore 522 344 pd LICENSE;
+#X text 14 347 http://yvanvolochine.com;
+#X text 25 29 Repeat anything a given number of times;
+#X obj 239 273 print;
+#X msg 239 93 foo 666 bar;
+#X msg 193 118 1 2 3;
+#X msg 139 164 0;
+#X obj 239 211 repeat 6;
+#X obj 176 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 343 178 5 1 20 1 times - -;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 1;
